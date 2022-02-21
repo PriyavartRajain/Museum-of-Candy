@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Museum of Candy</title>
+</head>
+
+<body>
+    <!-- navbar-dark is used when you have a dark background and want light text inside, 
+    navbar-expand-md ensures the navbar is expanded on all widths medium and above,
+    py-0 sets padding along y axis to 0, and fixed-top keeps the navbar fixed at the top -->
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <!-- navbar-brand encloses the brand name and logo in a navbar -->
+        <a href="#" class="navbar-brand">CANDY</a>
+        <!-- used to make the navbar toggler. data-target should always be the id of the list that contains navbar links -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapse class indicates a collapsible element. 
+        To control (show/hide) the collapsible content, 
+        add the data-toggle="collapse" attribute to an <a> or a <button> element. 
+        Then add the data-target="#id" attribute to connect the button with the collapsible content-->
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">TICKETS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- As opposed to regular contaners that only go part way through the screen, container-fluid covers the whole width.
+    We are using containers to be able to use the grid system. 
+    container-fluid does have padding on left and right, use px-0 to get rid of all padding along x axis -->
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <!-- only take 6 units of space on widths greater than large -->
+            <div class="col-lg-6">
+                <!-- for all widths below lg, d-none ensures the h2's are not displayed, once it reaches large width, set the display property to block 
+                mt-5 gives margin top of 5px-->
+                <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                </div>
+            </div>
+            <!-- same reasong for col-lg-6 as above -->
+            <div class="col-lg-6">
+                <!-- use img-fluid to make images scalable -->
+                <img src="imgs/hand2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+
+        <!-- ROW 1 -->
+        <!-- NOTE: content is not a bootstrap class, I put it there to style the row using css as well -->
+        <div class="row align-items-center content">
+            <!-- order-2 class places this column at 2nd place by default, but on all widths medium and above, its placed 1st-->
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="imgs/milk.png" alt="" class="img-fluid">
+            </div>
+            <!-- order-1 class places this column at 2nd place by default, but on all widths medium and above, its placed 2nd-->
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <!-- we have another row inside the 6 units of space, so that we can space out our text without affecting the image in the previous column -->
+                <div class="row justify-content-center">
+                    <!-- Gives the text 10 out of 12 units of space on all widths below large, once it reaches large width, the text takes up 8 units of space-->
+                    <!-- mb-5 gives a margin bottom of 5px by default and mb-md-0 gives a margin bottom of 0px once the width reaches medium -->
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <!-- The lollipop icon disappears on all widths below large. Beyond large, the icon is inline -->
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis,
+                            consectetur
+                            deserunt hic quia fuga exercitationem magnam soluta porro vitae nulla ratione consequatur
+                            qui
+                            accusamus error dolorum quam quisquam ipsa?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                <!-- we have another row inside the 6 units of space, so that we can space out our text without affecting the image in the previous column -->
+                <div class="row justify-content-center">
+                    <!-- Gives the text 10 out of 12 units of space on all widths below large, once it reaches large width, the text takes up 8 units of space-->
+                    <!-- NOTE: blurb is not a bootstrap class, I put it there to style the column using css as well -->
+                    <div class="col-10 col-lg-8 blurb mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <!-- The lollipop icon disappears on all widths below large. Beyond large, the icon is inline -->
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis,
+                            consectetur
+                            deserunt hic quia fuga exercitationem magnam soluta porro vitae nulla ratione consequatur
+                            qui
+                            accusamus error dolorum quam quisquam ipsa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="imgs/gumball.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="row align-items-center content">
+            <!-- order-2 class places this column at 2nd place by default, but on all widths medium and above, its placed 1st-->
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="imgs/sprinkles.png" alt="" class="img-fluid">
+            </div>
+            <!-- order-1 class places this column at 2nd place by default, but on all widths medium and above, its placed 2nd-->
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <!-- we have another row inside the 6 units of space, so that we can space out our text without affecting the image in the previous column -->
+                <div class="row justify-content-center">
+                    <!-- Gives the text 10 out of 12 units of space on all widths below large, once it reaches large width, the text takes up 8 units of space-->
+                    <div class="col-10 col-lg-8 blurb mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <!-- The lollipop icon disappears on all widths below large. Beyond large, the icon is inline -->
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis,
+                            consectetur
+                            deserunt hic quia fuga exercitationem magnam soluta porro vitae nulla ratione consequatur
+                            qui
+                            accusamus error dolorum quam quisquam ipsa?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                // Once we have scrolled more than the height of the navbar, apply the scrolled class to the navbar
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+
+</html>
